@@ -47,11 +47,22 @@ vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.config/nvim/lua/ernam/packer.lua<C
 vim.keymap.set("n", "<leader>c", ":call CenterPane()<cr>")
 
 -- kill other buffers
-vim.keymap.set("n", "<leader>ka", "<cmd>%bd|e# <cr>")
+vim.keymap.set("n", "<leader><S-c>", "<cmd>%bd|e# <cr>")
 
 -- telescope
 -- vim.keymap.set("n", "<leader>ff", "<cmd> telescope find_file<cr>")
 
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
+    print("so made")
 end)
+
+vim.keymap.set("n", "<leader>r ", " :MagmaEvaluateOperator<CR>   ", {silent = true, expr = true})
+vim.keymap.set("n", "<leader>rr", " :MagmaEvaluateLine<CR>       ", {silent = true })
+vim.keymap.set("x", "<leader>r ", " :<C-u>MagmaEvaluateVisual<CR>", {silent = true })
+vim.keymap.set("n", "<leader>rc", " :MagmaReevaluateCell<CR>     ", {silent = true })
+vim.keymap.set("n", "<leader>rd", " :MagmaDelete<CR>             ", {silent = true })
+vim.keymap.set("n", "<leader>ro", " :MagmaShowOutput<CR>         ", {silent = true })
+
+-- let g:magma_automatically_open_output = v:false
+-- let g:magma_image_provider = "ueberzug"

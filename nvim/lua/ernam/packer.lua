@@ -61,4 +61,7 @@ return require('packer').startup(function(use)
     use {'preservim/nerdtree'}
     use {'dcampos/cmp-emmet-vim'}
     use {'mattn/emmet-vim'}
+
+    -- jupyter package
+    use { 'dccsillag/magma-nvim', run = ':UpdateRemotePlugins' }
 end)
