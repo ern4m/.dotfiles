@@ -248,7 +248,7 @@ for_window [class="matplotlib"] floating enable
 # show drun
 bindsym $mod+d exec --no-startup-id ~/.config/rofi/launchers/type-1/launcher.sh
 # show powermenu
-bindsym $sup+k exec --no-startup-id ~/.config/rofi/powermenu/type-2/powermenu.sh
+bindsym $sup+Shift+k exec --no-startup-id ~/.config/rofi/powermenu/type-2/powermenu.sh
 # show window
 bindsym $mod+Shift+d exec --no-startup-id ~/.config/rofi/launchers/type-1/launcher_windows.sh
 
